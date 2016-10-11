@@ -1,0 +1,39 @@
+//============================================
+// Security
+//============================================
+
+.security_box
+  display: table-cell
+  vertical-align: middle
+  &-outer
+    display: table
+    width: 100%
+    height: 100%
+    max-width: 450px
+    margin: 0 auto
+  &-inner
+    background: $white
+    @extend .u-padd
+
+.security_content
+  border-top: 1px solid $gray-light
+  border-bottom: 1px solid $gray-light
+  padding-top: 30px
+  padding-bottom: 10px
+  margin-bottom: 20px
+
+  > p
+    margin-bottom: rem-calc(20)
+
+  form
+    @extend .u-push-top-half
+
+.security_box
+  .Actions
+    padding-top: 15px
+
+  #Remember
+    display: none
+
+  #ForgotPassword
+    padding-top: $space

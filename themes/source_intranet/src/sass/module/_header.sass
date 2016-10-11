@@ -1,0 +1,60 @@
+//============================================
+// Header
+//============================================
+.Header
+  background: rgba($white,.75)
+  .l-container_inner
+    position: relative
+    @media (max-width: 1365px)
+      #menu-button
+        cursor: pointer
+        width: 20px
+        // height: 14px
+        // display: table-cell
+        // vertical-align: middle
+        // position: relative
+        // padding-right: 15px
+        position: absolute
+        height: 14px
+        top: 23px
+        span
+          top: 6px
+          &, &:before, &:after 
+            display: block
+            width: 20px
+            background: $primary-color
+            transition: 200ms
+            height: 2px
+          &:before, &:after 
+            content: ''
+            position: relative
+          &:before 
+            // top: -6px
+            top: 12px
+          &:after
+            bottom: -4px
+
+    nav.secondary
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      margin: auto 0
+      font-size: 0
+      line-height: 0
+      height: rem-calc(30)
+      a
+        text-decoration: none
+        &#user-photo
+          img
+            width: rem-calc(30)
+            border-radius: rem-calc(15)
+      i
+        cursor: pointer
+        color: $color-blue-4
+        display: block
+      >
+        a, span
+          display: inline-block
+          line-height: rem-calc(30)
+          font-size: rem-calc(30)

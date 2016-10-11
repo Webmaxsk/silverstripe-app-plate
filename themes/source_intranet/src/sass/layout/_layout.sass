@@ -1,0 +1,174 @@
+//============================================
+// Layout
+//============================================
+
+.detail-navigation
+  position: relative
+  padding-bottom: 15px
+  border-bottom: 1px solid $gray-light
+  min-height: 48px
+  .link
+    +mq($bp-md-down)
+      display: none
+    height: 32px
+    line-height: 32px
+    display: inline-block
+    position: relative
+    margin: 0 12px
+    +mq($bp-lg)
+      margin: 0 15px
+    color: $gray-dark-2
+    &.last
+      margin-right: 0
+    &.first
+      margin-left: 0
+      color: $black
+      &:after
+        content: ""
+        border-bottom: 2px solid $color-blue-2
+        width: 100%
+        position: absolute
+        left: 0
+        top: 32px + 15px
+    &:hover, &:focus
+      text-decoration: none
+      color: $black
+
+.l-bg-primary
+  background: $color-blue-3
+  color: #fff
+  a
+    color: $color-blue-2
+
+.l-bg-secondary
+  background: $secondary-color
+  color: #fff
+  a
+    color: $color-blue-3
+
+.l-bg-white
+  background: $white
+
+.l-border-btm
+  border-bottom: 1px dotted $gray
+
+#site-title
+  a
+    display: block
+    font-size: rem-calc($rem-base + 2)
+    font-weight: 700
+    color: #3372bd
+    text-decoration: none
+    span
+      color: $color-blue-2
+
+.main-title
+  color: $black
+
+.default-layout
+  &--date
+    display: block
+    color: $gray-dark-2
+    font-size: rem-calc($rem-base - 2px)
+    font-weight: 400
+    padding-bottom: 7px
+  &--title
+    clear: left
+    font-weight: 700
+  &--subheader
+    font-weight: 500
+    font-size: rem-calc(18px)
+    +mq($bp-lg)
+      font-size: rem-calc(22px)
+  table
+    width: 100%
+    tr
+      height: 45px
+      &.odd
+        background: $gray-2
+      td
+        vertical-align: middle
+        padding: 0 5px
+        &.icon, &.size
+          text-align: center
+        &.icon
+          width: 40px
+        +mq($bp-xs-down)
+          &.file
+            max-width: 150px
+            overflow: hidden
+            text-overflow: ellipsis
+        &.size
+          border-left: 1px solid $white
+          color: $gray-dark-2
+          white-space: nowrap
+        a
+          color: $black
+          &:hover, &:focus
+            color: $primary-color
+
+.default-child
+  &.image-offset
+    min-height: 138px + 30px
+    .default-child--header, .default-child--description
+      +mq($bp-md)
+        margin-left: 138px + 30px
+  .default-child--header
+    padding-bottom: 10px
+    +mq($bp-md)
+      float: left
+  .default-child--image
+    +mq($bp-md)
+      position: absolute
+    a
+      display: inline-block
+  .default-child--description
+    padding-top: 10px
+    +mq($bp-md)
+      clear: left
+      float: left
+      padding-top: 0
+
+.wookmark
+  position: relative
+
+.i-docx
+  @extend .i-doc
+
+.i-xlsx
+  @extend .i-xls
+
+.main-layout
+  @extend .u-push-vert
+
+
+// Container
+//============================================
+
+.l-container
+  max-width: $layout-width-xs
+  padding: 0 $layout-gutter-xs
+  @media (max-width: 1365px)
+    margin: 0 auto
+  @media (min-width: 1366px)
+    margin-left: $layout-gutter-xl
+
++mq($bp-sm)
+  .l-container
+    max-width: $layout-width-sm
+    padding: 0 $layout-gutter-sm
+
++mq($bp-md)
+  .l-container
+    max-width: $layout-width-md
+    padding: 0 $layout-gutter-md
+
++mq($bp-lg)
+  .l-container
+    max-width: $layout-width-lg
+    padding: 0 $layout-gutter-lg
+
++mq($bp-xl)
+  .l-container
+    max-width: $layout-width-xl
+    padding: 0 $layout-gutter-xl

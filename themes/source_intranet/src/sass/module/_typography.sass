@@ -1,0 +1,250 @@
+//============================================
+// Typography
+//============================================
+
+p.notice
+  font-size: rem-calc(14px)
+  background: #eaf1f9
+  padding: 15px
+
+dl.inline
+  dd
+    display: inline
+    margin: 0
+  dd:after
+    display: block
+    content: ''
+  dt
+    display: inline-block
+    min-width: rem-calc(65)
+    margin-bottom: 0
+
+// Headings
+.h-heading
+  font-family: $font-headings
+  color: $primary-color
+  strong
+    color: $secondary-color
+
+.h-underlined
+  overflow: hidden
+  position: relative
+  padding-bottom: 15px
+  &:before
+    content: " "
+    display: block
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: 1px
+    border-bottom: 1px solid $gray-light
+  &:after
+    content: " "
+    display: block
+    width: 60px
+    border-bottom: 2px solid $color-blue-2
+    position: absolute
+    left: 0
+    bottom: 0
+
+h1, .h1, h2, .h2, h3, .h3
+  @extend .h-heading
+
+h3
+  font-weight: 700
+
+// some other classes
+.body-color
+  color: $color-text
+.primary-color
+  color: $primary-color
+.big
+  font-size: 150%
+.accent-color-1
+  color: $accent-color-1
+.accent-color-2
+  color: $accent-color-2
+
+.border
+  border: $typo-border
+  padding: 1px
+
+.radius
+  border-radius: $typo-radius
+
+.w700
+  font-weight: 700
+
+.smaller
+  font-size: 87.5%
+
+.smaller-2
+  font-size: 93.75%
+
+.space-left
+  padding-left: 30px
+
+.external
+  position: static
+
+// typography class
+.typography
+  hr
+    margin: 0
+
+  // Basic vertical rhythm on default elements
+  ul, ol, p, table, > div, hr
+    margin-bottom: $base-line-height
+    &:last-child, &.last-child
+      margin-bottom: 0
+
+  ul
+    // list-style-type: disc
+    list-style-type: none
+    margin-left: $typo-left-indent
+    li
+      padding-bottom: 7px
+      &:before
+        content: "• "
+        color: $primary-color
+        margin-left: -21px
+        margin-right: 8px
+        position: absolute
+        // background: transparent inline-image("bullet.png") no-repeat 0 8px
+        // padding-left: 20px
+      ul
+        //list-style: square
+        margin-left: $typo-left-indent/2
+        margin-bottom: 0
+        background: none
+
+  ol
+    margin-left: $typo-left-indent
+    // list-style: upper-roman
+    list-style: decimal
+    li ol
+      list-style: upper-roman
+      // list-style: decimal
+      margin-left: $typo-left-indent/2
+      margin-bottom: 0
+      li ol
+        list-style: lower-alpha
+
+  p+ul, p+ol
+    margin-top: -$base-line-height/2
+
+  h1, h2, h3
+    img
+      margin-bottom: $base-line-height
+
+  h1, .h1
+    margin: rem-calc($base-line-height*2.5) 0 rem-calc($base-line-height*1.25) 0
+  h2, .h2
+    margin: rem-calc($base-line-height*2) 0 rem-calc($base-line-height) 0
+  h3, .h3
+    margin: rem-calc($base-line-height) 0 rem-calc($base-line-height/4) 0
+  h4
+    margin: rem-calc($base-line-height/2) 0 rem-calc($base-line-height/8) 0
+  h5, .h5, h6, .h6
+    margin-bottom: rem-calc(2px)
+
+  a
+    &:hover, &:active, &:focus
+      img
+        opacity: 0.8
+    &.invisible
+      color: inherit
+
+  img
+    //@extend .radius
+    //@extend .border
+    @extend .u-img-max !optional
+    &.right, &.left, &.leftAlone, &.center
+      margin-bottom: $typo-img-space
+    &.right
+      margin-left: $typo-img-gutter
+      float: right
+    &.left
+      margin-right: $typo-img-gutter
+      float: left
+
+  div.leftAlone
+    float: none
+    display: block
+
+  div.captionImage
+    margin-bottom: $base-line-height
+    img
+      margin-left: 0
+      margin-right: 0
+      &.left, &.right
+        //margin-bottom: 0
+    &.left
+      float: left
+      margin-right: $typo-img-gutter
+    &.right
+      float: right
+      margin-left: $typo-img-gutter
+
+  .caption
+    text-align: center
+    margin: 0
+    &.right, &.left
+      text-align: center
+      float: none !important
+    //&.right
+    //  padding: 0 $thumb-border-width 0 $thumb-border-width+16px
+    //&.left
+    //  padding: 0 $thumb-border-width+16px 0 $thumb-border-width
+
+  table
+    //max-width: 100%
+    th, td
+      border: 1px solid #eaeaea
+      text-align: left
+      padding: 8px 10px
+
+    thead th
+      //text-transform: uppercase
+      vertical-align: bottom
+      background: darken(#eaeaea, 5%)
+
+    tbody
+      tr
+        &.even
+          background: #eaeaea
+
+        &.highlight
+          td, th
+            background: $primary-color
+            color: #fff
+
+    .full
+      width: 100%
+
+    &.center
+      margin: 0 auto
+    
+    &:not(:last-child)
+      margin-bottom: 22px
+  .no-border table, table.no-border
+    border: 0
+    td, th
+      border: 0
+  .center
+    &:not(table)
+      margin: 0 auto
+      display: block
+  .center-align
+    text-align: center
+  .right-align
+    text-align: right
+  .left-align
+    text-align: left
+
+  form
+    ul
+      margin-left: 0
+      li
+        &:before
+          content: none

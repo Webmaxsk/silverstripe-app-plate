@@ -1,0 +1,22 @@
+---
+Name: mysite-extensions
+---
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
+
+Page:
+  extensions:
+    - WidgetPageExtension
+
+Image:
+  extensions:
+    - ImageSizesExtension
+
+BlogPost:
+  extensions:
+    - BlogPostExtension
+
+BlogPost_Controller:
+  extensions:
+    - BlogPost_ControllerExtension

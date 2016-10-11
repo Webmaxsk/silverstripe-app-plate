@@ -1,0 +1,81 @@
+//============================================
+// Buttons
+//============================================
+
+.btn
+  &, &:visited
+    color: $primary-color
+  transition: background-color .35s
+  padding: $space-quarter 20px
+  background: $white
+  font-size: inherit
+  font-weight: bold
+  font-family: inherit
+  text-transform: uppercase
+  border: 2px solid $secondary-color
+  //border-radius: 3px
+  width: auto
+  display: inline-block
+  line-height: $lh
+  text-align: center
+  text-decoration: none
+  vertical-align: middle
+  white-space: nowrap
+  text-shadow: none
+  &:hover, &:active, &:focus
+    text-decoration: none
+    background: $secondary-color
+    color: $white
+
+.btn-orange-border
+  @extend .btn
+
+.btn--full
+  width: 100%
+
+.btn--standard-size
+  font-size: rem-calc(18)
+  height: $form-field-height
+
+.btn--extra-size
+  font-size: rem-calc(27)
+  height: rem-calc(52)
+  padding: rem-calc(15) rem-calc(60)
+  line-height: .9
+
+.btn--secondary
+  background-color: $secondary-color
+  &:hover, &:active, &:focus
+    background-color: $primary-color
+
+.btn--white-border
+  padding: rem-calc(9) rem-calc(10)
+  +mq($bp-lg)
+    padding: rem-calc(18) rem-calc(20)
+  border: 2px solid $white
+  background: transparent
+  font-weight: 700
+  font-size: rem-calc(14)
+  &, &:visited
+    color: $white
+  &:hover, &:active, &:focus
+    background: rgba($white, 0.35)
+    text-decoration: none
+
+
+.no-touchevents .btn:focus,
+.no-touchevents .btn:hover
+  background-color: $primary
+  border-color: $primary
+  z-index: 1
+  outline: 0
+  cursor: pointer
+
+.no-touchevents .btn.disabled:hover,
+.no-touchevents .btn[disabled]:hover,
+.btn.disabled,
+.btn[disabled]
+  background-color: $gray-light
+  border-color: $gray-light
+  color: $gray
+  cursor: not-allowed

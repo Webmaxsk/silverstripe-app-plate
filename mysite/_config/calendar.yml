@@ -1,0 +1,7 @@
+Calendar:
+  timezone: Europe/Bratislava
+  language: SK
+CalendarDateTime:
+  time_format_override: 24
+  date_format_override: d-m-Y
+

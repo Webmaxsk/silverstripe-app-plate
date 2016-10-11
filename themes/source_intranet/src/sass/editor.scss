@@ -1,0 +1,23 @@
+//============================================
+// Editor
+//============================================
+
+// Silverstripe WYSIWYG Editor styles
+
+// Library
+//============================================
+@import "lib/lib";
+
+// Base
+//============================================
+@import "base/normalize";
+@import "base/vars";
+@import "base/defaults";
+@import "base/headings";
+
+// Typography
+@import "module/btn";
+@import "module/typography";
+
+html, body
+	background: $white;

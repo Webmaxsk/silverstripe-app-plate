@@ -1,0 +1,34 @@
+.pagination
+  .pagination-prev, .pagination-status, .pagination-pages, .pagination-next
+    display: block
+    float: left
+    height: 32px
+    line-height: 32px
+    i
+      display: block
+      font-size: rem-calc(30)
+      color: $gray-dark
+  .pagination-prev, .pagination-next
+    text-decoration: none
+    &:hover, &:focus
+      i
+        color: $primary-color
+  .pagination-prev
+    margin-right: 15px
+  .pagination-next
+    margin-left: 15px
+  .pagination-status
+    color: $gray-dark
+    strong
+      color: $black
+  .pagination-pages
+    a
+      text-decoration: underline
+      &:hover, &:focus
+        text-decoration: none
+    span, a
+      margin: 0 1.5px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0

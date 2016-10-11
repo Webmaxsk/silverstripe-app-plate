@@ -1,0 +1,226 @@
+@import "../../../../jquery.mmenu/dist/css/jquery.mmenu.css";
+
+$mm_ws_menuWidth: 300px;
+$mm_searchfieldHeight: 30px;
+$mm_navbarHeight: 50px;
+
+$mm_emphasizedBackgroundColor: rgba($primary-color,0.5);
+
+@import "../../../../jquery.mmenu/src/css/jquery.mmenu.oncanvas";
+
+@import "../../../../jquery.mmenu/src/addons/iconpanels/jquery.mmenu.iconpanels";
+// @import "../../../../jquery.mmenu/src/addons/dragopen/jquery.mmenu.dragopen";
+@import "../../../../jquery.mmenu/src/addons/setselected/jquery.mmenu.setselected";
+@import "../../../../jquery.mmenu/src/addons/searchfield/jquery.mmenu.searchfield";
+@import "../../../../jquery.mmenu/src/addons/navbars/jquery.mmenu.navbars";
+@import "../../../../jquery.mmenu/src/addons/counters/jquery.mmenu.counters";
+
+@import "../../../../jquery.mmenu/src/extensions/effects/jquery.mmenu.effects";
+@import "../../../../jquery.mmenu/src/extensions/pagedim/jquery.mmenu.pagedim";
+@import "../../../../jquery.mmenu/src/extensions/borderstyle/jquery.mmenu.borderstyle";
+
+@media (min-width: 1366px) {
+  @import "../../../../jquery.mmenu/src/extensions/widescreen/jquery.mmenu.widescreen";
+
+  html, body {
+    overflow: visible !important;
+  }
+
+  .l-wrap.body {
+    margin-left: $mm_ws_menuWidth;
+    &:before {
+      content: "";
+      width: 300px;
+      height: 100%;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .mm-page {
+    background: transparent;
+    .l-wrap.body {
+      margin-left: 0;
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+
+#mmenu  {
+  background: $white;
+
+  a {
+    i {
+      width: 35px;
+      color: $gray-dark;
+    }
+  }
+
+  .mm-listview {
+    &.mm-fullopen {
+      > li {
+        &:hover, &:focus, &.section, &.mm-selected {
+          background: rgba($mm_emphasizedBackgroundColor,1);
+
+          a, i, em {
+            color: $white;
+          }
+
+          a.mm-next:after {
+            border-color: $white;
+          }
+        }
+
+        a.mm-selected + a {
+          background: rgba($mm_emphasizedBackgroundColor,1);
+          color: $white;
+        }
+      }
+    }
+    &:not(.mm-fullopen) {
+      > li {
+        a:not(.mm-next) {
+          &:hover, &:focus, &.active {
+            background: rgba($mm_emphasizedBackgroundColor,1);
+
+            &, i {
+              color: $white;
+            }
+          }
+        }
+
+        a.mm-next {
+          &:hover, &:focus, &.active {
+            background: $mm_emphasizedBackgroundColor;
+
+            &, i {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    &.listview-icons {
+      > li {
+        & > a, & > span {
+          padding-left: 15px;
+        }
+
+        &:not(.mm-divider)
+        {
+          &:after
+          {
+            left: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .mm-navbar {
+    &[class*="mm-navbar-content-"] > * {
+      width: 100%;
+      float: none;
+      clear: left;
+      margin: 0 auto;
+    }
+
+    &.mm-navbar-top-1 {
+      height: 146px + $logo-height;
+    }
+
+    &.mm-navbar-top-2 {
+      top: 146px + $logo-height;
+    }
+
+    & + .mm-panels {
+      top: 196 + $logo-height;
+    }
+
+    #site-logo {
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
+
+    h1 {
+      padding-top: 0;
+      padding-bottom: 27.5px;
+    }
+
+    .mm-search {
+      width: 260px;
+      margin: 0 auto;
+      padding: 0;
+
+      input {
+        background: $gray-2
+      }
+
+      .mm-btn {
+        height: 30px;
+      }
+    }
+
+    .mm-title {
+      padding: 15px 0;
+    }
+  }
+
+  .mm-panels {
+    margin-bottom: 90px;
+  }
+
+  #SearchForm_SearchForm {
+    width: 240px;
+    margin: 30px auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .field {
+      margin: 0;
+    }
+
+    input {
+      margin: 0;
+      padding: 0;
+
+      &#SearchForm_SearchForm_Search {
+        height: 30px;
+        width: 100%;
+        padding: 0 38px 0 15px;
+        border: 1px solid #e3e7eb;
+        border-radius: 15px;
+        background: $white;
+      }
+
+      &#SearchForm_SearchForm_action_results {
+        @extend .i, .i-search;
+
+        background-color: transparent;
+        position: absolute;
+        right: 10px;
+        top: 6px;
+        z-index: 1;
+        border: 0;
+        outline: 0;
+        text-indent: 9999px;
+      }
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -7.5px;
+    }
+  }
+
+  @include mm_navbar_sizing( 1 );
+}

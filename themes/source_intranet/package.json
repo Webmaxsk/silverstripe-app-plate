@@ -1,0 +1,99 @@
+{
+  "name": "silverstripe-gulp-plate",
+  "version": "1.2.1",
+  "description": "Gulp boilerplate for SilverStripe theme development",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arillo/silverstripe-gulp-plate.git"
+  },
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "coffeeify"
+    ]
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.min.js",
+    "magnificPopup": "./node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+    "slick": "./node_modules/slick-carousel/slick/slick.js",
+    "touchswipe": "./node_modules/jquery-touchswipe/jquery.touchSwipe.js",
+    "wookmark": "./node_modules/wookmark/wookmark.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "magnificPopup": {
+      "exports": "magnificPopup",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "slick": {
+      "exports": "slick",
+      "depends": [
+        "jquery:$"
+      ]
+    },
+    "touchswipe": {
+      "exports": "touchswipe",
+      "depends": [
+        "jquery:$"
+      ]
+    },
+    "wookmark": {
+      "exports": "wookmark",
+      "depends": [
+        "jquery:$"
+      ]
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.2.2",
+    "browserify": "^9.0.3",
+    "browserify-shim": "^3.8.2",
+    "coffeeify": "^1.0.0",
+    "coffeelint-stylish": "^0.1.2",
+    "del": "^1.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^1.1.1",
+    "gulp-coffeelint": "^0.5.0",
+    "gulp-filesize": "^0.0.6",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-import-css": "^0.1.2",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-svg-sprite": "^1.1.2",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.2.4",
+    "jshint-stylish": "^2.0.0",
+    "lodash": "^3.3.1",
+    "merge-stream": "^0.1.7",
+    "pretty-hrtime": "^1.0.0",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.1.0",
+    "vinyl": "^0.4.6",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.4.0",
+    "gulp-inline-base64": "^0.1.4"
+  },
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "normalize.css": "^3.0.3",
+    "svg4everybody": "^2.0.0",
+    "html5shiv": "~3.7.3",
+    "magnific-popup": "~1.0.0",
+    "slick-carousel": "~1.5.8",
+    "jquery-touchswipe": "~1.6.12",
+    "wookmark": "2.1.2"
+  }
+}

@@ -1,0 +1,33 @@
+.Location
+  color: $black
+  font-weight: 700
+  width: 100%
+  padding-right: rem-calc(175)
+  // height: 60px
+  // display: table
+  // padding: 15px 0
+  .breadcrumbs
+    // display: table-cell
+    // vertical-align: middle
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    margin-left: 35px
+    height: 60px
+    line-height: 60px
+    @media (min-width: 1366px)
+      margin-left: 0
+    a
+      text-decoration: underline
+      font-weight: 400
+      &:hover, &:focus
+        text-decoration: none
+    i
+      margin: 0 rem-calc(15)
+      color: $primary-color
+      &:before
+        @extend [class^="icon-"]:before
+        @extend .icon-angle-right
+        font-size: rem-calc(20)
+  #meniny
+    font-weight: 400

@@ -1,0 +1,36 @@
+#comments-holder
+  #Form_CommentsForm
+    @extend .u-push-top
+    #Form_CommentsForm_Comment_Holder label
+      display: none
+
+  .comments-holder
+    @extend .u-padd-top
+    .author
+      color: $primary-color
+      font-size: rem-calc($rem-base - 1);
+      font-weight: 700
+    .date
+      color: $gray-dark-2;
+      font-size: rem-calc($rem-base - 2);
+      @extend .u-push-lft-half
+    .comment
+      .comment-action-links
+        text-align: right
+      .comment-replies-container
+        @extend .u-padd-lft-half
+        border-left: $typo-border
+      hr
+        @extend .u-push-vert
+
+
+  .commenting-rss-feed
+    @extend .u-push-top
+
+  .reply-form
+    .Actions
+      text-align: right
+
+.comment-replies-holder
+  .comment + .comment
+    @extend .u-padd-top-half

@@ -1,0 +1,35 @@
+.Gallery
+  .Gallery_Item
+    a
+      position: relative
+      display: block
+      text-align: center
+      img
+        display: block
+      &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+      &:hover
+        &:before
+          background-color: rgba(0,0,0,0.5)
+        .SortedImagesExtraNumber
+          background-color: transparent
+    .SortedImagesExtraNumber
+      color: $white
+      font-size: rem-calc(25)
+      font-weight: 700
+      background-color: rgba(0,0,0,0.5)
+      border-radius: rem-calc(30)
+      width: rem-calc(60)
+      height: rem-calc(60)
+      line-height: rem-calc(60)
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto

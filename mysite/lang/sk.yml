@@ -1,0 +1,21 @@
+sk:
+  LeftAndMain:
+    PERMALREADY: 'Je nám ľúto, ale k tejto časti CMS nemáte prístup. Ak sa chcete prihlásiť ako niekto iný, urobte tak nižšie.'
+
+  CommentsInterface_ss:
+    AWAITINGMODERATION: 'Your comment has been submitted and is now awaiting moderation.'
+    COMMENTLOGINERROR: 'Komentáre môžete pridávať až po prihlásení'
+    COMMENTPERMISSIONERROR: 'and that you have an appropriate permission level'
+    COMMENTPOSTLOGIN: 'Prihlásiť sa'
+    COMMENTS: Comments
+    COMMENTSDISABLED: 'Posting comments has been disabled'
+    DELETEALLCOMMENTS: 'Delete all comments on this page'
+    LOGINTOPOSTCOMMENT: 'Pre komentovanie sa prihláste'
+    NEXT: next
+    NOCOMMENTSYET: 'Táto stránka ešte nebola komentovaná.'
+    POSTCOM: 'Pridať komentár.'
+    PREV: previous
+    RSSFEEDALLCOMMENTS: 'RSS feed for all comments'
+    RSSFEEDCOMMENTS: 'RSS feed for comments on this page'
+  PageCommentInterface:
+    DELETEALLCOMMENTS: 'Delete all comments on this page'

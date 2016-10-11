@@ -1,0 +1,58 @@
+//============================================
+// Headings, only sizes, fonts, ... NOT margins, this is for typography
+//============================================
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+  font-family: $font
+  line-height: 1.25
+  margin: 0
+  font-weight: inherit
+
+h1, .h1
+  font-size: rem-calc(28px)
+  +mq($bp-lg)
+    font-size: rem-calc(36px)
+
+h2, .h2
+  font-size: rem-calc(22px)
+  +mq($bp-lg)
+    font-size: rem-calc(30px)
+
+h3, .h3
+  font-size: rem-calc(16px)
+  +mq($bp-lg)
+    font-size: rem-calc(20px)
+
+h4, .h4
+  font-size: rem-calc(17px)
+
+h5, .h5
+  font-size: rem-calc(15px)
+  font-weight: 700
+
+h6, .h6
+  font-size: rem-calc(15px)
+  line-height: 1.05
+
+/* h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  br
+    display: none
+    +mq($bp-lg)
+      display: inline */
+
+.h-tools
+  @extend .h2
+  position: absolute
+  right: 0
+  i
+    float: left
+    color: $gray-dark
+    cursor: pointer
+    &:hover, &:focus, &.active
+      color: $primary-color
+  a
+    text-decoration: none
+    &:hover, &:focus
+      i
+        color: $primary-color

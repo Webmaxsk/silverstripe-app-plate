@@ -1,0 +1,22 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'intranet'
+
+DateField:
+  default_config:
+    showcalendar: true
+    jslocale: sk
+    dateformat: dd.MM.yyyy
+
+TimeField:
+  default_config:
+    use_strtotime: true
+    timeformat: HH:mm

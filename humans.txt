@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+    /* TEAM */
+    Pali Ondráš
+    programming & coding
+    http://webmax.sk
+    Twitter: pali_ondras
+    Location: Žilina, Slovakia, EU
+    
+    Tomáš Kyška
+    graphics
+    http://webmax.sk
+    Twitter: Hobitko
+    Location: Žilina, Slovakia, EU
+
+    /* THANKS */                       
+
+    /* SITE */
+    Standards: HTML5, CSS3
+    Components: Modernizr, jQuery, Entwine, Compass, Susy
+    Software: SilverStripe CMS

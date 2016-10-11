@@ -1,0 +1,26 @@
+#member_bookmarks
+  #bookmarks-sortable
+    margin-bottom: 18px
+    .bookmark
+      overflow: hidden
+      text-overflow: ellipsis
+      height: 35px
+      position: relative
+      &.ui-sortable-helper
+        opacity: 0.7
+        background: $gray-light
+      &-title
+        white-space: nowrap
+        margin-left: 25px
+        line-height: 35px
+      .editBookmark
+        position: absolute
+        top: 0
+        left: 0
+        line-height: 35px
+        padding: 0
+        text-decoration: none
+    .bookmark-placeholder
+      border: 1px solid $gray-dark
+      background: $gray-2
+      height: 35px

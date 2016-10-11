@@ -1,0 +1,89 @@
+{
+	"name": "silverstripe/installer",
+	"description": "The SilverStripe Framework Installer",
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "webmaxsk/maxdocuments",
+				"version": "master",
+				"type": "silverstripe-module",
+				"source": {
+					"url": "https://github.com/Webmaxsk/maxdocuments.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "webmaxsk/silverstripe-member-widgets",
+				"version": "master",
+				"type": "silverstripe-module",
+				"source": {
+					"url": "https://github.com/Webmaxsk/silverstripe-member-widgets.git",
+					"type": "git",
+					"reference": "master"
+				},
+				"extra": {
+					"installer-name": "z-silverstripe-member-widgets"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "webmaxsk/silverstripe-bookmarks",
+				"version": "master",
+				"type": "silverstripe-module",
+				"source": {
+					"url": "https://github.com/Webmaxsk/silverstripe-bookmarks.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "webmaxsk/silverstripe-polls",
+				"version": "master",
+				"type": "silverstripe-module",
+				"source": {
+					"url": "https://github.com/Webmaxsk/silverstripe-polls.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+
+		"silverstripe/cms": "3.4.*@stable",
+		"silverstripe/framework": "3.4.*@stable",
+
+		"vrana/adminer": "*",
+
+		"silverstripe/userforms": "4.1.0",
+
+        "silverstripe/event-calendar": "1.0.14",
+        "silverstripe/blog": "2.4.3",
+        "silverstripe/widgets": "1.2.3",
+
+        "silverstripe/comments": "*",
+		"ezyang/htmlpurifier": "*",
+
+        "webmaxsk/maximages": "*",
+
+        "webmaxsk/maxdocuments": "*",
+        "webmaxsk/silverstripe-member-widgets": "*",
+        "webmaxsk/silverstripe-bookmarks": "*",
+        "webmaxsk/silverstripe-polls": "*"
+	},
+	"config": {
+		"process-timeout": 600
+	},
+	"minimum-stability": "dev"
+}
