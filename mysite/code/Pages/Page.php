@@ -95,16 +95,7 @@ class Page_Controller extends ContentController {
 				USERFORMS_DIR . '/thirdparty/jquery-validate/jquery.validate.min.js',
 				USERFORMS_DIR . '/javascript/UserForm.js',
 
-				FRAMEWORK_ADMIN_DIR . '/javascript/ssui.core.js',
-				THIRDPARTY_DIR . '/javascript-templates/tmpl.js',
-				THIRDPARTY_DIR . '/javascript-loadimage/load-image.js',
-				THIRDPARTY_DIR . '/jquery-fileupload/jquery.iframe-transport.js',
-				THIRDPARTY_DIR . '/jquery-fileupload/cors/jquery.xdr-transport.js',
-				THIRDPARTY_DIR . '/jquery-fileupload/jquery.fileupload.js',
-				THIRDPARTY_DIR . '/jquery-fileupload/jquery.fileupload-ui.js',
-				FRAMEWORK_DIR . '/javascript/UploadField_uploadtemplate.js',
-				FRAMEWORK_DIR . '/javascript/UploadField_downloadtemplate.js',
-				FRAMEWORK_DIR . '/javascript/UploadField.js'
+				FRAMEWORK_ADMIN_DIR . '/javascript/ssui.core.js'
 			)
 		);
 
