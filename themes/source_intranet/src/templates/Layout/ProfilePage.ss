@@ -5,6 +5,9 @@
 				<span>$Title</span>
 				<% include HTools %>
 			</h2>
+			<% if Content %>
+				<div class="typography u-padd-btm-half">$Content</div>
+			<% end_if %>
 			$ProfileForm
 		</section>
 	</div>
