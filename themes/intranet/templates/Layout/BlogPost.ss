@@ -21,14 +21,13 @@
 				</h2>
 				<% if Content %>
                     <div class="typography u-padd-btm">$Content</div>
-                    <hr>
                 <% end_if %>
                 <% if SortedImages %>
+                    <hr>
                 	<h3 id="gallery" class="default-layout--subheader">Galéria</h3>
                     <div class="u-padd-btm-half">
                         <% include Gallery Quantity=6 %>
                     </div>
-					<hr>
                 <% end_if %>
 				<% include FilesToDownload %>
 				<% include Comments %>

@@ -1,4 +1,5 @@
 <% if SortedDocuments %>
+	<hr>
 	<h3 id="downloads" class="default-layout--subheader">Súbory na prevzatie</h3>
 	<div class="u-padd-btm u-push-top-half">
 		<% if DocumentsContent %>
@@ -16,5 +17,4 @@
 			<% end_loop %>
 		</table>
 	</div>
-	<hr>
 <% end_if %>

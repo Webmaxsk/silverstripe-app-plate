@@ -12,7 +12,7 @@
 				<% if Content %>
 					<div class="typography u-padd-btm">$Content</div>
 				<% end_if %>
-				<% if notContent %>
+				<% if not Content %>
 					<div class="u-pull-top-half">
 				<% end_if %>
 				<% include Gallery %>

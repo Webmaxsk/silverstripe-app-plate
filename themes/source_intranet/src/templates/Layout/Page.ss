@@ -43,15 +43,12 @@
                     <% if Form %>
                         <div class="typography u-padd-btm">$Form</div>
                     <% end_if %>
-                    <% if Content || Form %>
-                        <hr>
-                    <% end_if %>
                     <% if SortedImages %>
-                        <h3 id="gallery" class="default-layout--subheader">Galéria</h3>
-                            <div class="u-padd-btm-half">
-                                <% include Gallery Quantity=6 %>
-                            </div>
                         <hr>
+                        <h3 id="gallery" class="default-layout--subheader">Galéria</h3>
+                        <div class="u-padd-btm-half">
+                            <% include Gallery Quantity=6 %>
+                        </div>
                     <% end_if %>
                     <% include FilesToDownload %>
                     <% include Comments %>
