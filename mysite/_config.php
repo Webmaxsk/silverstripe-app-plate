@@ -112,6 +112,6 @@ VirtualPage::config()->allow_documents = false;
 //Force enviroment to Dev ** REMOVE FOR LIVE SITES **
 //Director::set_environment_type("live");
 
-Email::setAdminEmail('intranet@webmax.sk');
+//Email::setAdminEmail('intranet@webmax.sk');
 
 //EOF

@@ -33,17 +33,13 @@ OPTIONAL: if using non-default vagrant provider add provider to the end
 cd public/vagrant && vagrant up --provider="lxc"
 ```
 
-add .vagrant folder to public/.gitignore
-- you should commit vagrant dir, but not local vagrant setup (in public/vagrant/.vagrant)
-- you can customize vagrant for each project individually - if it is in repository, every team member is sharing same vagrant setup
-
 OPTIONAL: install quick vagrant execution script
 
 Global script allowing execution of commands in vagrant guest from host 
+(you must be in public or public/vagrant folder) 
 ```bash
 cp -f public/vagrant/vrun /usr/local/bin/vrun
 ```
-(you must be in public or public/vagrant folder) 
 
 Example:
 ```bash
@@ -117,8 +113,9 @@ cd public/vagrant
 vagrant package --output ../../test.box
 ```
 will save test.box to Project root. After, you can safely destroy existing vagrant ("vrun vagrant destroy") and archive whole Project. Once you need to run this project again, just unarchive project and change config.json in row "box" with "test.box" and run "vrun vagrant up"
+
 NOTICE: "vrun vagrant anything" is not executed on vagrant guest, but in host (shortcut - you don't need to go to public/vagrant folder).
 
 
 ## ToDo
-xdebug, ...
+xdebug, ssl

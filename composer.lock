@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "32ced4eb2ae6df66737960456fd26817",
-    "content-hash": "047b2ef092baed631ad3cd465cc0c17a",
+    "hash": "45425a0d22847f656af8c3d0884f8dc8",
+    "content-hash": "401d4b6738ac9eb8d9a9835f46fd58d4",
     "packages": [
         {
             "name": "assertchris/hash-compat",
@@ -238,12 +238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "1ef4375dbb7b14d9879088387ebef327f179d32b"
+                "reference": "08eee90e15d028767e0a082bdf6cdf450c8cbbbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/1ef4375dbb7b14d9879088387ebef327f179d32b",
-                "reference": "1ef4375dbb7b14d9879088387ebef327f179d32b",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/08eee90e15d028767e0a082bdf6cdf450c8cbbbf",
+                "reference": "08eee90e15d028767e0a082bdf6cdf450c8cbbbf",
                 "shasum": ""
             },
             "require": {
@@ -277,19 +277,19 @@
             "keywords": [
                 "html"
             ],
-            "time": "2016-09-05 22:24:08"
+            "time": "2016-10-02 07:14:41"
         },
         {
             "name": "johngrogg/ics-parser",
             "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/johngrogg/ics-parser.git",
+                "url": "https://github.com/u01jmg3/ics-parser.git",
                 "reference": "6085a18242eaf98e6586e3defa7705fa207847ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johngrogg/ics-parser/zipball/6085a18242eaf98e6586e3defa7705fa207847ac",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/6085a18242eaf98e6586e3defa7705fa207847ac",
                 "reference": "6085a18242eaf98e6586e3defa7705fa207847ac",
                 "shasum": ""
             },
@@ -325,12 +325,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
-                "reference": "50ffec51e4c1d5a0a01fd1ae8bb6df00cbfd7c99"
+                "reference": "e8986f9817faad3ad54a6212a82353c96a85e043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/50ffec51e4c1d5a0a01fd1ae8bb6df00cbfd7c99",
-                "reference": "50ffec51e4c1d5a0a01fd1ae8bb6df00cbfd7c99",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/e8986f9817faad3ad54a6212a82353c96a85e043",
+                "reference": "e8986f9817faad3ad54a6212a82353c96a85e043",
                 "shasum": ""
             },
             "require": {
@@ -370,7 +370,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2016-08-25 23:38:23"
+            "time": "2016-10-17 01:37:02"
         },
         {
             "name": "silverstripe/blog",
@@ -939,52 +939,38 @@
             "time": "2016-08-16 23:08:01"
         },
         {
-            "name": "vrana/adminer",
+            "name": "webmaxsk/maxdocuments",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vrana/adminer.git",
-                "reference": "949b913d4fd7d98a6d6b02ce59ad2521bce94026"
+                "url": "https://github.com/Webmaxsk/maxdocuments.git",
+                "reference": "342ef89dc2c3285511b83bcdd8b98f1d716c598d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vrana/adminer/zipball/949b913d4fd7d98a6d6b02ce59ad2521bce94026",
-                "reference": "949b913d4fd7d98a6d6b02ce59ad2521bce94026",
+                "url": "https://api.github.com/repos/Webmaxsk/maxdocuments/zipball/342ef89dc2c3285511b83bcdd8b98f1d716c598d",
+                "reference": "342ef89dc2c3285511b83bcdd8b98f1d716c598d",
                 "shasum": ""
             },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "plugins/"
-                ]
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "maxdocuments"
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0",
-                "GPL-2.0"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Jakub Vrána",
-                    "homepage": "http://www.vrana.cz/"
+                    "name": "Rastislav Brandobur",
+                    "email": "brandobur@webmax.sk"
                 }
             ],
-            "description": "Database management in a single PHP file.",
-            "homepage": "https://www.adminer.org/",
+            "description": "Simple documents for any data object.",
             "keywords": [
-                "database"
+                "documents",
+                "silverstripe"
             ],
-            "time": "2016-09-28 05:04:44"
-        },
-        {
-            "name": "webmaxsk/maxdocuments",
-            "version": "master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Webmaxsk/maxdocuments.git",
-                "reference": "master"
-            },
-            "type": "silverstripe-module",
             "time": "2016-10-11 11:31:11"
         },
         {
@@ -1032,50 +1018,111 @@
         },
         {
             "name": "webmaxsk/silverstripe-bookmarks",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/silverstripe-bookmarks.git",
-                "reference": "master"
+                "reference": "52e3908eb4598ee70dcef5ffd9b39f225381dd45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-bookmarks/zipball/52e3908eb4598ee70dcef5ffd9b39f225381dd45",
+                "reference": "52e3908eb4598ee70dcef5ffd9b39f225381dd45",
+                "shasum": ""
             },
             "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-bookmarks"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Rastislav Brandobur",
+                    "email": "brandobur@webmax.sk"
+                }
+            ],
+            "description": "Looged in members can bookmark any internal or external page.",
+            "keywords": [
+                "bookmarks",
+                "silverstripe"
+            ],
             "time": "2016-10-11 12:01:33"
         },
         {
             "name": "webmaxsk/silverstripe-member-widgets",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/silverstripe-member-widgets.git",
-                "reference": "master"
+                "reference": "0e8cd67fe411f491e41056b4f0d3a8f987971580"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-member-widgets/zipball/0e8cd67fe411f491e41056b4f0d3a8f987971580",
+                "reference": "0e8cd67fe411f491e41056b4f0d3a8f987971580",
+                "shasum": ""
             },
             "type": "silverstripe-module",
             "extra": {
                 "installer-name": "z-silverstripe-member-widgets"
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Rastislav Brandobur",
+                    "email": "brandobur@webmax.sk"
+                }
+            ],
+            "description": "Allow customization of widgets area by logged in member. Member can hide default widgets or add new widgets. Custom sorting of available.",
+            "keywords": [
+                "silverstripe",
+                "widgets"
+            ],
             "time": "2016-10-11 11:55:45"
         },
         {
             "name": "webmaxsk/silverstripe-polls",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/silverstripe-polls.git",
-                "reference": "master"
+                "reference": "3ce11c6cf0468990cfe4af2676b35bc974015ea4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-polls/zipball/3ce11c6cf0468990cfe4af2676b35bc974015ea4",
+                "reference": "3ce11c6cf0468990cfe4af2676b35bc974015ea4",
+                "shasum": ""
+            },
+            "suggest": {
+                "undefinedoffset/sortablegridfield": "*"
             },
             "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-polls"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Rastislav Brandobur",
+                    "email": "brandobur@webmax.sk"
+                }
+            ],
+            "description": "Silverstripe simple polls module.",
+            "keywords": [
+                "polls",
+                "silverstripe"
+            ],
             "time": "2016-10-11 12:04:19"
-        },
-        {
-            "name": "webmaxsk/z-silverstripe-member-widgets",
-            "version": "master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Webmaxsk/silverstripe-member-widgets.git",
-                "reference": "master"
-            },
-            "type": "silverstripe-module",
-            "time": "2016-10-11 11:55:45"
         }
     ],
     "packages-dev": [],
