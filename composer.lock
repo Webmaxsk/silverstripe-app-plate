@@ -284,12 +284,12 @@
             "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/u01jmg3/ics-parser.git",
+                "url": "https://github.com/johngrogg/ics-parser.git",
                 "reference": "6085a18242eaf98e6586e3defa7705fa207847ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/6085a18242eaf98e6586e3defa7705fa207847ac",
+                "url": "https://api.github.com/repos/johngrogg/ics-parser/zipball/6085a18242eaf98e6586e3defa7705fa207847ac",
                 "reference": "6085a18242eaf98e6586e3defa7705fa207847ac",
                 "shasum": ""
             },
@@ -944,12 +944,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/maxdocuments.git",
-                "reference": "342ef89dc2c3285511b83bcdd8b98f1d716c598d"
+                "reference": "d8d8da6c7bd1acf253be397ce88229c70458c5c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Webmaxsk/maxdocuments/zipball/342ef89dc2c3285511b83bcdd8b98f1d716c598d",
-                "reference": "342ef89dc2c3285511b83bcdd8b98f1d716c598d",
+                "url": "https://api.github.com/repos/Webmaxsk/maxdocuments/zipball/d8d8da6c7bd1acf253be397ce88229c70458c5c5",
+                "reference": "d8d8da6c7bd1acf253be397ce88229c70458c5c5",
                 "shasum": ""
             },
             "type": "silverstripe-module",
@@ -971,7 +971,7 @@
                 "documents",
                 "silverstripe"
             ],
-            "time": "2016-10-11 11:31:11"
+            "time": "2016-10-21 13:11:15"
         },
         {
             "name": "webmaxsk/maximages",
@@ -979,12 +979,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/maximages.git",
-                "reference": "4fd44cbc23d8f26aef07b5772fa3163633a56dc0"
+                "reference": "40b140a70003e7440d6d61008ef27d9f8505c8e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Webmaxsk/maximages/zipball/4fd44cbc23d8f26aef07b5772fa3163633a56dc0",
-                "reference": "4fd44cbc23d8f26aef07b5772fa3163633a56dc0",
+                "url": "https://api.github.com/repos/Webmaxsk/maximages/zipball/40b140a70003e7440d6d61008ef27d9f8505c8e9",
+                "reference": "40b140a70003e7440d6d61008ef27d9f8505c8e9",
                 "shasum": ""
             },
             "require": {
@@ -1014,7 +1014,7 @@
                 "photos",
                 "silverstripe"
             ],
-            "time": "2016-08-01 10:17:06"
+            "time": "2016-10-20 16:49:52"
         },
         {
             "name": "webmaxsk/silverstripe-bookmarks",
@@ -1022,12 +1022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/silverstripe-bookmarks.git",
-                "reference": "52e3908eb4598ee70dcef5ffd9b39f225381dd45"
+                "reference": "3138397e89a3198dd721a6bffa3c74e022777961"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-bookmarks/zipball/52e3908eb4598ee70dcef5ffd9b39f225381dd45",
-                "reference": "52e3908eb4598ee70dcef5ffd9b39f225381dd45",
+                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-bookmarks/zipball/3138397e89a3198dd721a6bffa3c74e022777961",
+                "reference": "3138397e89a3198dd721a6bffa3c74e022777961",
                 "shasum": ""
             },
             "type": "silverstripe-module",
@@ -1049,7 +1049,7 @@
                 "bookmarks",
                 "silverstripe"
             ],
-            "time": "2016-10-11 12:01:33"
+            "time": "2016-10-29 10:32:36"
         },
         {
             "name": "webmaxsk/silverstripe-member-widgets",
@@ -1057,12 +1057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/silverstripe-member-widgets.git",
-                "reference": "0e8cd67fe411f491e41056b4f0d3a8f987971580"
+                "reference": "4b8e78526e1b5afa6c20e337969574146982ad95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-member-widgets/zipball/0e8cd67fe411f491e41056b4f0d3a8f987971580",
-                "reference": "0e8cd67fe411f491e41056b4f0d3a8f987971580",
+                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-member-widgets/zipball/4b8e78526e1b5afa6c20e337969574146982ad95",
+                "reference": "4b8e78526e1b5afa6c20e337969574146982ad95",
                 "shasum": ""
             },
             "type": "silverstripe-module",
@@ -1084,7 +1084,7 @@
                 "silverstripe",
                 "widgets"
             ],
-            "time": "2016-10-11 11:55:45"
+            "time": "2016-10-18 08:22:26"
         },
         {
             "name": "webmaxsk/silverstripe-polls",
@@ -1092,12 +1092,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Webmaxsk/silverstripe-polls.git",
-                "reference": "3ce11c6cf0468990cfe4af2676b35bc974015ea4"
+                "reference": "afcf5143a217f1947480728935ee3d777aa78491"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-polls/zipball/3ce11c6cf0468990cfe4af2676b35bc974015ea4",
-                "reference": "3ce11c6cf0468990cfe4af2676b35bc974015ea4",
+                "url": "https://api.github.com/repos/Webmaxsk/silverstripe-polls/zipball/afcf5143a217f1947480728935ee3d777aa78491",
+                "reference": "afcf5143a217f1947480728935ee3d777aa78491",
                 "shasum": ""
             },
             "suggest": {
@@ -1122,7 +1122,7 @@
                 "polls",
                 "silverstripe"
             ],
-            "time": "2016-10-11 12:04:19"
+            "time": "2016-10-18 08:30:07"
         }
     ],
     "packages-dev": [],
