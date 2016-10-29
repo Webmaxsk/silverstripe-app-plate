@@ -40,7 +40,6 @@ module.exports = {
       'bb >= 10'
     ],
     settings: {
-      includePaths: ['../../foundation/scss'],
       indentedSyntax: true, // Enable .sass syntax!
       imagePath: 'images' // Used by the image-url helper
     }
