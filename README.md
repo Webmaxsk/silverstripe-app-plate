@@ -1,5 +1,5 @@
-# silverstripe-intranet-plate
-SilverStripe CMS starter project (aka plate) for web sites like intranet (documentation or app-like looking projects).
+# silverstripe-app-plate
+SilverStripe CMS starter project (aka plate) for app-like looking websites.
 
 ## Supported modules
 - Userforms
@@ -23,9 +23,9 @@ See more here: https://github.com/Webmaxsk/silverstripe-vagrant/
 
 ## Installation && Vagrant setup
 
-clone intranet-plate to public folder (see project structure above)
+clone silverstripe-app-plate to public folder (see project structure above)
 ```bash
-cd your-project-root && git clone git@github.com:Webmaxsk/silverstripe-intranet-plate.git public && rm -rf public/.git
+cd your-project-root && git clone git@github.com:Webmaxsk/silverstripe-app-plate.git public && rm -rf public/.git
 ```
 
 add config.json to Project root
