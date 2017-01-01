@@ -48,5 +48,5 @@ Important: See public/vagrant/README.md for additional information and config (n
 
 Optional: you can import data sample (assets and db)
 ```bash
-vrun mysspak load-2-local public/sample.sspak
+vrun mysspak load-to-local public/sample.sspak
 ```
