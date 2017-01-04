@@ -92,6 +92,8 @@ $tinyMCE->setOptions(array(
 BlogTagsWidget::config()->only_available_in = array('none');
 PollWidget::config()->only_available_in = array('SideBar');
 
+ActivePollPage::config()->allow_images = false;
+ArchivedPollPage::config()->allow_images = false;
 Blog::config()->allow_images = false;
 Calendar::config()->allow_images = false;
 CalendarEvent::config()->allow_images = false;
@@ -100,6 +102,8 @@ RedirectorPage::config()->allow_images = false;
 UserDefinedForm::config()->allow_images = false;
 VirtualPage::config()->allow_images = false;
 
+ActivePollPage::config()->allow_documents = false;
+ArchivedPollPage::config()->allow_documents = false;
 Blog::config()->allow_documents = false;
 Calendar::config()->allow_documents = false;
 CalendarEvent::config()->allow_documents = false;
